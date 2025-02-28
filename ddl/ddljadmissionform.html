@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - Daughters of Divine Love Juniorate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="validation.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        #confirmationScreen {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        #confirmationScreen {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Daughters of Divine Love Juniorate</h1>
+    <h2 style="text-align:center;">Admission Form</h2>
+    <form id="admissionForm">
+        <fieldset>
+            <legend>SECTION A: STUDENT INFORMATION</legend>
+            <label>Full Name: <input type="text" name="full_name" required></label>
+            <label>Date of Birth (DD/MM/YYYY): <input type="date" name="dob" required></label>
+            <label>Gender: 
+                <select name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+            <label>Nationality: <input type="text" name="nationality" required></label>
+            <label>Religion: <input type="text" name="religion" required></label>
+            <label>Home Address: <input type="text" name="home_address" required></label>
+            <label>City/Town: <input type="text" name="city" required></label>
+            <label>State/Province: <input type="text" name="state" required></label>
+            <label>Country: <input type="text" name="country" required></label>
+            <label>Student’s Phone Number: <input type="tel" name="student_phone" required></label>
+            <label>Student’s Email Address: <input type="email" name="student_email" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>SECTION B: PARENT/GUARDIAN INFORMATION</legend>
+            <label>Father’s/Guardian’s Full Name: <input type="text" name="father_name" required></label>
+            <label>Phone Number: <input type="tel" name="father_phone" required></label>
+            <label>Email Address: <input type="email" name="father_email" required></label>
+            <label>Occupation: <input type="text" name="father_occupation" required></label>
+            <label>Employer’s Name: <input type="text" name="father_employer" required></label>
+            <label>Mother’s/Guardian’s Full Name: <input type="text" name="mother_name" required></label>
+            <label>Phone Number: <input type="tel" name="mother_phone" required></label>
+            <label>Email Address: <input type="email" name="mother_email" required></label>
+            <label>Occupation: <input type="text" name="mother_occupation" required></label>
+            <label>Employer’s Name: <input type="text" name="mother_employer" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>SECTION C: ACADEMIC INFORMATION</legend>
+            <label>Previous School Name: <input type="text" name="previous_school" required></label>
+            <label>Previous School Address: <input type="text" name="previous_school_address" required></label>
+            <label>Last Class Attended: <input type="text" name="last_class" required></label>
+            <label>Year of Completion: <input type="text" name="year_completion" required></label>
+            <label>Final Grade/Results: <input type="text" name="final_grade" required></label>
+            <label>Subjects Studied: <input type="text" name="subjects_studied" required></label>
+            <label>Language(s) Spoken: <input type="text" name="languages" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>SECTION D: MEDICAL INFORMATION</legend>
+            <label>Blood Group: <input type="text" name="blood_group"></label>
+            <label>Allergies (if any): <input type="text" name="allergies"></label>
+            <label>Medical Conditions: <input type="text" name="medical_conditions"></label>
+            <label>Physician’s Name: <input type="text" name="physician_name"></label>
+            <label>Physician’s Contact: <input type="text" name="physician_contact"></label>
+            <label>Emergency Contact Name: <input type="text" name="emergency_contact_name"></label>
+            <label>Emergency Contact Number: <input type="text" name="emergency_contact_number"></label>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                    padding: 20px;
+                    background-color: #f4f4f4;
+                }
+                form, #confirmationScreen {
+                    background: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    max-width: 800px;
+                    margin: auto;
+                }
+                fieldset {
+                    border: 1px solid #ccc;
+                    margin-bottom: 15px;
+                    padding: 10px;
+                }
+                legend {
+                    font-weight: bold;
+                }
+                label {
+                    display: block;
+                    margin-top: 10px;
+                    font-weight: bold;
+                }
+                input, select, textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-top: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                button {
+                    background-color: #5cb85c;
+                    color: white;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                button:hover {
+                    background-color: #4cae4c;
+                }
+                #confirmationScreen {
+                    display: none;
+                    text-align: center;
+                }
+            </style>
+        
+            
+                <fieldset>
+                    <legend>SECTION F: EXTRA-CURRICULAR ACTIVITIES</legend>
+                    <label>Preferred Sports: <input type="text" name="preferred_sports"></label>
+                    <label>Clubs/Organizations Interested In: <input type="text" name="clubs_organizations"></label>
+                    <label>Special Skills/Talents: <input type="text" name="special_skills"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>SECTION G: DECLARATION</legend>
+                    <p>I hereby declare that all the information provided in this form is true and correct to the best of my knowledge.</p>
+                    <label>Student’s Signature: <input type="text" name="student_signature"></label>
+                    <label>Date: <input type="date" name="student_signature_date"></label>
+                    <label>Parent/Guardian’s Signature: <input type="text" name="guardian_signature"></label>
+                    <label>Date: <input type="date" name="guardian_signature_date"></label>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div id="confirmationScreen">
+                <h2>Admission Form Submission Receipt</h2>
+                <p><strong>School Name:</strong> Daughters of Divine Love Juniorate</p>
+                <img src="school_logo.png" alt="School Logo" width="100">
+                <p><strong>Full Name:</strong> <span id="confirmName"></span></p>
+                <p><strong>Contact Number:</strong> <span id="confirmPhone"></span></p>
+                <p><strong>Email Address:</strong> <span id="confirmEmail"></span></p>
+                <p><strong>Grade/Program Applied For:</strong> <span id="confirmGrade"></span></p>
+                <p><strong>Application Number:</strong> <span id="confirmAppNumber"></span></p>
+                <p><strong>Account Number:</strong> UBA BANK - 09037191117 (DDL ADMISSION)</p>
+                <p><strong>Submission Date:</strong> <span id="confirmDate"></span></p>
+                <p><strong>Status:</strong> Successfully Submitted</p>
+                <h3>Important Notes:</h3>
+                <p>Keep this receipt for future reference.</p>
+                <p>You will receive further communication regarding the admission process via email/SMS.</p>
+                <p>Contact the school for any concerns or updates.</p>
+                <p><strong>School Address:</strong> [School Address]</p>
+                <p><strong>Website:</strong> [School Website] | <strong>Contact:</strong> [School Contact Info]</p>
+                <button onclick="downloadReceipt()">Download Receipt</button>
+            </div>
+            
+            <button id="downloadCSV">Download Applications (Admin)</button>
+        
+        <script>
+            document.getElementById('admissionForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                let formData = new FormData(this);
+                let data = {};
+                formData.forEach((value, key) => data[key] = value);
+                data.applicationNumber = 'DDL' + Math.floor(100000 + Math.random() * 900000);
+                data.submissionDate = new Date().toLocaleString();
+                
+                localStorage.setItem(data.applicationNumber, JSON.stringify(data));
+                
+                document.getElementById('confirmName').textContent = data.full_name || 'N/A';
+                document.getElementById('confirmPhone').textContent = data.phone || 'N/A';
+                document.getElementById('confirmEmail').textContent = data.email || 'N/A';
+                document.getElementById('confirmGrade').textContent = data.grade || 'N/A';
+                document.getElementById('confirmAppNumber').textContent = data.applicationNumber;
+                document.getElementById('confirmDate').textContent = data.submissionDate;
+                
+                document.getElementById('admissionForm').style.display = 'none';
+                document.getElementById('confirmationScreen').style.display = 'block';
+            });
+        
+            function downloadReceipt() {
+                let content = document.getElementById('confirmationScreen').innerText;
+                let blob = new Blob([content], { type: "application/msword" });
+                let link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = "Admission_Receipt.doc";
+                link.click();
+            }
+        </script>
+</body>
+</html>
